@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2: Persuasive or Deceptive Visualization?</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        
+        h3 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        
+        .proposition {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            border-left: 5px solid #3498db;
+        }
+        
+        .proposition p {
+            font-size: 1.3em;
+            font-style: italic;
+            color: #2c3e50;
+            margin: 0;
+        }
+        
+        .viz-section {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .viz-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        
+        .design-decisions {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .decision {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .decision h4 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        
+        .score {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        
+        .score-negative {
+            background-color: #e74c3c;
+            color: white;
+        }
+        
+        .score-neutral {
+            background-color: #95a5a6;
+            color: white;
+        }
+        
+        .score-positive {
+            background-color: #27ae60;
+            color: white;
+        }
+        
+        .reflection {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 30px;
+        }
+        
+        .reflection p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Project 2: Persuasive or Deceptive Visualization?</h1>
+        <p>Exploring Ethical Boundaries in Data Visualization</p>
+    </header>
+    
+    <div class="proposition">
+        <h2>Proposition</h2>
+        <p>"Developed countries are leading the fight against climate change through significant reductions in CO2 emissions."</p>
+    </div>
+    
+    <!-- SUPPORTING VISUALIZATIONS -->
+    <div class="viz-section">
+        <h2>Supporting the Proposition</h2>
+        <p>These visualizations aim to persuade the viewer that developed countries are indeed leading climate action through their emission reductions.</p>
+        
+        <h3>Visualization 1: Recent Emissions Trend</h3>
+        <img src="viz1_supporting.png" alt="Developed Countries CO2 Emissions Decline">
+        
+        <h3>Visualization 2: Individual Country Progress</h3>
+        <img src="viz2_supporting.png" alt="Leading Nations Environmental Progress">
+        
+        <div class="design-decisions">
+            <h3>Design Decisions & Rationale</h3>
+            
+            <div class="decision">
+                <h4>1. Truncated Y-axis <span class="score score-negative">Score: -1.5</span></h4>
+                <p>Starting the y-axis at 9 instead of 0 makes the decline appear more dramatic than it actually is. This is moderately deceptive as it exaggerates the visual magnitude of change, though the underlying data remains accurate. I considered using a full scale, but chose truncation to maximize the persuasive impact of the downward trend. This technique is common in financial charts but can mislead casual viewers about the true scale of change.</p>
+            </div>
+            
+            <div class="decision">
+                <h4>2. Selective Time Window (2000-2020) <span class="score score-negative">Score: -1.0</span></h4>
+                <p>Showing only the past two decades hides the historical context of much higher emissions in earlier decades. This is somewhat deceptive but can be justified as focusing on "recent progress" or "current trends." I debated including earlier data but decided against it as it would undermine the narrative of recent leadership. The timeframe selection strategically emphasizes improvement while obscuring long-term responsibility.</p>
+            </div>
+            
+            <div class="decision">
+                <h4>3. Green Color and Positive Language <span class="score score-negative">Score: -0.5</span></h4>
+                <p>Using green colors and phrases like "significant decline" and "environmental progress" creates positive emotional associations through color psychology and word choice. This is mildly persuasive and somewhat manipulative, but it's commonly used in environmental communications for "good news" stories. Alternative neutral colors (gray, blue) were considered but green more effectively reinforces the positive environmental message.</p>
+            </div>
+            
+            <div class="decision">
+                <h4>4. Percentage-Based Framing <span class="score score-negative">Score: -1.0</span></h4>
+                <p>Highlighting a "20% reduction" sounds impressive without providing absolute context that emissions remain high. This percentage framing is deceptive because it obscures the fact that even after reduction, developed countries maintain high per-capita emissions. I considered showing absolute values but percentages are more persuasive for demonstrating "progress" regardless of starting point.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- OPPOSING VISUALIZATIONS -->
+    <div class="viz-section">
+        <h2>Opposing the Proposition</h2>
+        <p>These visualizations aim to persuade the viewer that developed countries are NOT leading climate action and continue to be disproportionate polluters.</p>
+        
+        <h3>Visualization 1: Current Emissions Comparison</h3>
+        <img src="viz1_opposing.png" alt="Developed vs Developing Countries Emissions Comparison">
+        
+        <h3>Visualization 2: Historical Context</h3>
+        <img src="viz2_opposing.png" alt="Historical Emissions Perspective">
+        
+        <div class="design-decisions">
+            <h3>Design Decisions & Rationale</h3>
+            
+            <div class="decision">
+                <h4>1. Full Scale Bar Chart (Starting at 0) <span class="score score-positive">Score: 1.5</span></h4>
+                <p>Using a bar chart that starts at zero shows the true magnitude of difference between developed and developing countries. This is a largely earnest approach that provides accurate visual representation following standard conventions. However, the strategic choice to highlight this particular metric (per capita, 2018) rather than others (total emissions, emissions per GDP) still serves a persuasive purpose. I chose this over normalized scales to emphasize the real disparity.</p>
+            </div>
+            
+            <div class="decision">
+                <h4>2. Red/Dark Colors for Developed Countries <span class="score score-negative">Score: -1.0</span></h4>
+                <p>Using red and dark colors for developed countries creates a negative emotional response through color psychology, associating them with danger or wrongdoing. This is moderately deceptive as it manipulates reader emotions and violates neutral color conventions where assignment should be arbitrary. Alternative neutral color schemes were available but less emotionally impactful for the critical narrative.</p>
+            </div>
+            
+            <div class="decision">
+                <h4>3. Emphatic Language: "STILL" and "3X MORE" <span class="score score-negative">Score: -1.5</span></h4>
+                <p>Using all-caps and multiplier language ("STILL," "3X MORE," "Major Polluters") emphasizes ongoing inequality with emotionally charged framing. This is deceptive through tone and emphasis, even though the factual claims are accurate. More neutral alternatives like "Developed countries emit three times more per capita" were considered but would be less persuasive in conveying urgency and moral judgment.</p>
+            </div>
+            
+            <div class="decision">
+                <h4>4. Historical Timeline Included <span class="score score-positive">Score: 1.5</span></h4>
+                <p>Including the full historical timeline from 1960-2020 shows long-term patterns and provides complete context rather than cherry-picking favorable timeframes. This is an earnest decision that gives readers the full picture and allows them to draw their own conclusions about responsibility and progress. I considered limiting to recent decades like the supporting visualizations, but chose transparency to strengthen the credibility of the critical perspective.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- FINAL REFLECTION -->
+    <div class="reflection">
+        <h2>Final Reflection</h2>
+        
+        <p>This project revealed how blurred the line between persuasive and deceptive visualization truly is. What surprised me most was discovering that the most "earnest" design choices, like using full scales and complete historical data, were not neutral at all but strategically chosen to support a particular narrative. Even when I tried to be truthful by starting axes at zero or including all available timeframes, I was still making rhetorical choices about which metrics to show, which countries to include, and how to frame the question itself. The act of visualization is inherently selective, and that selection process is where persuasion happens, regardless of whether specific techniques are traditionally considered "deceptive."</p>
+        
+        <p>The most difficult aspect was calibrating the deception scores. Techniques I initially thought were clearly deceptive (like truncated axes) felt more justifiable when focusing on "change over time," while techniques that seemed earnest (like comparing per capita emissions) revealed themselves as strategic when I considered what they omitted (total emissions, emissions per GDP, historical cumulative emissions). I found myself gravitating toward the opposing visualizations because mixing earnest structural choices (full scales, complete timelines) with deceptive rhetorical choices (charged language, manipulative colors) felt more sophisticated and harder to dismiss than visualizations that relied purely on distorted scales. This combination suggests that the most effective persuasion may come from building credibility through some transparent choices while subtly shaping interpretation through others.</p>
+        
+        <p>After this process, I would define "ethical analysis and visualization" not as the absence of persuasion, but as transparency about the choices made and their implications. The bounds I would draw distinguish between misleading and acceptable persuasion based on whether the techniques obscure verifiable facts versus shape interpretation of those facts. Truncating axes or cherry-picking timeframes without clear labeling crosses into unacceptable territory because it can make viewers misperceive the data itself. However, using evocative language, strategic color choices, or selecting which true facts to emphasize falls into acceptable persuasion, as long as the underlying data is accurate and the visual encodings follow perceptual principles. The key ethical question is whether a viewer with careful attention could still extract accurate information, or whether the design actively prevents that. Ultimately, all visualization involves advocacy for a particular way of seeing data, and pretending otherwise may be the most deceptive stance of all.</p>
+    </div>
+    
+    <footer>
+        <p>Data Source: <a href="https://github.com/light-and-salt/World-Bank-Data-by-Indicators">World Bank Climate Change Indicators (1960-2020)</a></p>
+        <p>Project 2 - Data Visualization Course - 2024</p>
+    </footer>
+</body>
+</html>
+
