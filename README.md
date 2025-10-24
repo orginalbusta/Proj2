@@ -16,7 +16,7 @@ This project explores the ethical boundaries between persuasive and deceptive da
 - `export_images.py` - Script to export visualization images
 
 ## Data Source
-World Bank Climate Change Indicators Dataset (1960-2020)
+World Bank Climate Change Indicators Dataset (1960-2020).
 - Repository: https://github.com/light-and-salt/World-Bank-Data-by-Indicators
 - Indicator: CO2 emissions (metric tons per capita)
 - Countries analyzed: 10 developed nations vs. 10 developing nations
